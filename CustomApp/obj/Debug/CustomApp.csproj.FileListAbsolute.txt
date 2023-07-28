@@ -1,0 +1,16 @@
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\obj\Debug\CustomApp.csproj.AssemblyReference.cache
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\obj\Debug\CustomApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\obj\Debug\CustomApp.Controls.CustomComboBox.resources
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\obj\Debug\CustomApp.Controls.CustomTextBox.resources
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\obj\Debug\CustomApp.FormMainMenu.resources
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\obj\Debug\CustomApp.Forms.FormTool.resources
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\obj\Debug\CustomApp.Properties.Resources.resources
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\obj\Debug\CustomApp.csproj.GenerateResource.cache
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\obj\Debug\CustomApp.csproj.CoreCompileInputs.cache
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\bin\Debug\CustomApp.exe.config
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\bin\Debug\CustomApp.exe
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\bin\Debug\CustomApp.pdb
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\obj\Debug\CustomApp.csproj.CopyComplete
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\obj\Debug\CustomApp.exe
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\obj\Debug\CustomApp.pdb
