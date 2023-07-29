@@ -17,6 +17,8 @@ namespace CustomApp.Forms
         public FormTool()
         {
             InitializeComponent();
+            string currentPath = Application.StartupPath;
+  
             int i = 0;
             foreach(User user in UserList.Instance.Users)
             {
@@ -90,7 +92,8 @@ namespace CustomApp.Forms
                 string userString=user.ToString();
                 userStringList.Add(userString);
             }
-            string filePath = "C:/Users/phamh/OneDrive/Documents/Project/RestaurantManager/CustomApp/CustomApp/CustomApp/data.txt";
+            string filePath ="../../data/data.txt";
+
             File.WriteAllLines(filePath, userStringList);
         }
 

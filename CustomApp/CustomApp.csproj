@@ -127,7 +127,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="data.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -155,7 +154,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="data.txt" />
+    <Content Include="Data\data.txt" />
     <Content Include="Resources\icons8-cancel-100.png" />
     <Content Include="Resources\icons8-check-100.png" />
     <Content Include="Resources\icons8-user-96.png" />

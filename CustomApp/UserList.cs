@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Markup;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace CustomApp
 {
@@ -30,7 +33,7 @@ namespace CustomApp
         private UserList()
         {
             users = new List<User>();
-            string filePath = "C:/Users/phamh/OneDrive/Documents/Project/RestaurantManager/CustomApp/CustomApp/CustomApp/data.txt";
+            string filePath = "../../data/data.txt";
 
             if (File.Exists(filePath))
             {
@@ -48,7 +51,7 @@ namespace CustomApp
             }
             else
             {
-                Console.WriteLine("File not found: " + filePath);
+                MessageBox.Show("không tìm thấy tệp data");
             }
 
         }
