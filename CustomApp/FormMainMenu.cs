@@ -91,12 +91,14 @@ namespace CustomApp
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color2);
+            Reset();
+            OpenChildForm(new Forms.FormTool());
         }
 
         private void BtnInfo_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color3);
+            Reset();
+            OpenChildForm(new Forms.Information());
         }
 
         private void btnHome_Click(object sender, EventArgs e)

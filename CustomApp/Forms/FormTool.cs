@@ -63,7 +63,7 @@ namespace CustomApp.Forms
             }
             else
             {
-                MessageBox.Show("Tài khoản hoặc mật khẩu chưa có");
+                MessageBox.Show("Vui lòng điền đủ thông tin tài khoản và mật khẩu");
             }
             index = -1;
             
@@ -73,7 +73,6 @@ namespace CustomApp.Forms
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0) // Check if the clicked cell is within the data grid
             {
                 txUsername.Texts = UserList.Instance.Users[e.RowIndex].Name;
-                
                 txtPassword.Texts = UserList.Instance.Users[e.RowIndex].Password;
                 comboBoxServer.Texts = UserList.Instance.Users[e.RowIndex].Server;
                 txUsername.isPlaceholder = false;
@@ -110,14 +109,44 @@ namespace CustomApp.Forms
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if(index != -1)
+            
+            List<int> selectedRowIndices = new List<int>();
+            foreach (DataGridViewRow row in dataGridView.SelectedRows)
             {
-                UserList.Instance.Users.RemoveAt(index);
+                if (!row.IsNewRow)
+                {
+                    selectedRowIndices.Add(row.Index);
+                }
+            }
+
+            selectedRowIndices.Sort();
+            selectedRowIndices.Reverse();
+
+            foreach (int index in selectedRowIndices)
+            {
+                // Remove the row from the DataGridView
                 dataGridView.Rows.RemoveAt(index);
-                index = -1;
+                UserList.Instance.Users.RemoveAt(index);
                 saveFile();
             }
-            
+        }
+
+        private bool isHiddenPassword = true;
+
+        private void pictureHidenPassword_Click(object sender, EventArgs e)
+        {
+            isHiddenPassword = !isHiddenPassword;
+            if(isHiddenPassword)
+            {
+                pictureHidenPassword.Image = CustomApp.Properties.Resources.view;
+                txtPassword.PasswordChar = false;
+            }
+            else
+            {
+                pictureHidenPassword.Image = CustomApp.Properties.Resources._private;
+                txtPassword.PasswordChar = true;
+            }
+           
         }
     }
 }

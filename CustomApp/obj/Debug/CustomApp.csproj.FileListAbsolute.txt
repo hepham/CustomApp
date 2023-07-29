@@ -14,3 +14,4 @@ C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\
 C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\obj\Debug\CustomApp.csproj.CopyComplete
 C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\obj\Debug\CustomApp.exe
 C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\obj\Debug\CustomApp.pdb
+C:\Users\phamh\OneDrive\Documents\Project\RestaurantManager\CustomApp\CustomApp\CustomApp\obj\Debug\CustomApp.Forms.Information.resources
