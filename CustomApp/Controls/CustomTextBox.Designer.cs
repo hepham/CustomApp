@@ -38,7 +38,7 @@
             this.textBox1.Location = new System.Drawing.Point(15, 15);
             this.textBox1.Margin = new System.Windows.Forms.Padding(5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 18);
+            this.textBox1.Size = new System.Drawing.Size(220, 15);
             this.textBox1.TabIndex = 0;
             this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);

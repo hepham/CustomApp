@@ -63,7 +63,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(182, 612);
+            this.panelMenu.Size = new System.Drawing.Size(196, 612);
             this.panelMenu.TabIndex = 0;
             // 
             // BtnInfo
@@ -76,12 +76,12 @@
             this.BtnInfo.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.BtnInfo.IconColor = System.Drawing.Color.Gainsboro;
             this.BtnInfo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnInfo.IconSize = 32;
+            this.BtnInfo.IconSize = 20;
             this.BtnInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnInfo.Location = new System.Drawing.Point(0, 260);
             this.BtnInfo.Name = "BtnInfo";
             this.BtnInfo.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.BtnInfo.Size = new System.Drawing.Size(182, 60);
+            this.BtnInfo.Size = new System.Drawing.Size(196, 60);
             this.BtnInfo.TabIndex = 3;
             this.BtnInfo.Text = "Information";
             this.BtnInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -99,12 +99,12 @@
             this.btnSettings.IconChar = FontAwesome.Sharp.IconChar.Tools;
             this.btnSettings.IconColor = System.Drawing.Color.Gainsboro;
             this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSettings.IconSize = 32;
+            this.btnSettings.IconSize = 20;
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSettings.Location = new System.Drawing.Point(0, 200);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnSettings.Size = new System.Drawing.Size(182, 60);
+            this.btnSettings.Size = new System.Drawing.Size(196, 60);
             this.btnSettings.TabIndex = 2;
             this.btnSettings.Text = "Settings";
             this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -122,12 +122,12 @@
             this.btnTools.IconChar = FontAwesome.Sharp.IconChar.Rocket;
             this.btnTools.IconColor = System.Drawing.Color.Gainsboro;
             this.btnTools.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnTools.IconSize = 32;
+            this.btnTools.IconSize = 20;
             this.btnTools.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTools.Location = new System.Drawing.Point(0, 140);
             this.btnTools.Name = "btnTools";
             this.btnTools.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnTools.Size = new System.Drawing.Size(182, 60);
+            this.btnTools.Size = new System.Drawing.Size(196, 60);
             this.btnTools.TabIndex = 1;
             this.btnTools.Text = "Tools";
             this.btnTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -141,7 +141,7 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(182, 140);
+            this.panelLogo.Size = new System.Drawing.Size(196, 140);
             this.panelLogo.TabIndex = 0;
             // 
             // btnHome
@@ -150,7 +150,7 @@
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.Location = new System.Drawing.Point(0, 0);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(182, 140);
+            this.btnHome.Size = new System.Drawing.Size(196, 140);
             this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnHome.TabIndex = 0;
             this.btnHome.TabStop = false;
@@ -162,9 +162,9 @@
             this.panel2.Controls.Add(this.panelShadow);
             this.panel2.Controls.Add(this.panelTitleBar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(182, 0);
+            this.panel2.Location = new System.Drawing.Point(196, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(978, 612);
+            this.panel2.Size = new System.Drawing.Size(964, 612);
             this.panel2.TabIndex = 1;
             // 
             // panelDesktop
@@ -173,7 +173,7 @@
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(0, 84);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(978, 528);
+            this.panelDesktop.Size = new System.Drawing.Size(964, 528);
             this.panelDesktop.TabIndex = 2;
             // 
             // panelShadow
@@ -182,7 +182,7 @@
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(0, 75);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(978, 9);
+            this.panelShadow.Size = new System.Drawing.Size(964, 9);
             this.panelShadow.TabIndex = 1;
             // 
             // panelTitleBar
@@ -193,7 +193,7 @@
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(0, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(978, 75);
+            this.panelTitleBar.Size = new System.Drawing.Size(964, 75);
             this.panelTitleBar.TabIndex = 0;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -204,7 +204,7 @@
             this.labelTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
             this.labelTitleChildForm.Location = new System.Drawing.Point(58, 23);
             this.labelTitleChildForm.Name = "labelTitleChildForm";
-            this.labelTitleChildForm.Size = new System.Drawing.Size(50, 21);
+            this.labelTitleChildForm.Size = new System.Drawing.Size(40, 19);
             this.labelTitleChildForm.TabIndex = 1;
             this.labelTitleChildForm.Text = "Tools";
             // 

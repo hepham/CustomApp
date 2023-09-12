@@ -151,5 +151,15 @@ namespace CustomApp.Forms
             }
            
         }
+
+        private void customComboBoxTest1_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxServer_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

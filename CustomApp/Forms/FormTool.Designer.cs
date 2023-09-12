@@ -29,26 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTool));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureHidenPassword = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.imageUsersList = new System.Windows.Forms.ImageList(this.components);
-            this.imageCheckList = new System.Windows.Forms.ImageList(this.components);
-            this.pictureHidenPassword = new System.Windows.Forms.PictureBox();
             this.customButton30 = new CustomApp.customButton();
             this.customButton31 = new CustomApp.customButton();
             this.customButton32 = new CustomApp.customButton();
@@ -60,6 +50,7 @@
             this.customButton22 = new CustomApp.customButton();
             this.customButton23 = new CustomApp.customButton();
             this.customTextBox3 = new CustomApp.Controls.CustomTextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.customButton24 = new CustomApp.customButton();
             this.customButton25 = new CustomApp.customButton();
             this.customButton26 = new CustomApp.customButton();
@@ -74,6 +65,7 @@
             this.customButton17 = new CustomApp.customButton();
             this.btnSelect = new CustomApp.customButton();
             this.customTextBox2 = new CustomApp.Controls.CustomTextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.customButton8 = new CustomApp.customButton();
             this.customButton9 = new CustomApp.customButton();
             this.customButton10 = new CustomApp.customButton();
@@ -87,11 +79,19 @@
             this.comboBoxServer = new CustomApp.Controls.CustomComboBox();
             this.txtPassword = new CustomApp.Controls.CustomTextBox();
             this.txUsername = new CustomApp.Controls.CustomTextBox();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.imageUsersList = new System.Windows.Forms.ImageList(this.components);
+            this.imageCheckList = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureHidenPassword)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureHidenPassword)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -111,6 +111,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(512, 481);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureHidenPassword
+            // 
+            this.pictureHidenPassword.Image = global::CustomApp.Properties.Resources._private;
+            this.pictureHidenPassword.Location = new System.Drawing.Point(233, 95);
+            this.pictureHidenPassword.Name = "pictureHidenPassword";
+            this.pictureHidenPassword.Size = new System.Drawing.Size(20, 20);
+            this.pictureHidenPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureHidenPassword.TabIndex = 10;
+            this.pictureHidenPassword.TabStop = false;
+            this.pictureHidenPassword.Click += new System.EventHandler(this.pictureHidenPassword_Click);
             // 
             // panel2
             // 
@@ -180,140 +191,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1, 225);
             this.panel7.TabIndex = 27;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(3, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(500, 1);
-            this.panel6.TabIndex = 8;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(500, 1);
-            this.panel3.TabIndex = 8;
-            // 
-            // dataGridView
-            // 
-            this.dataGridView.AllowUserToAddRows = false;
-            this.dataGridView.AllowUserToDeleteRows = false;
-            this.dataGridView.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
-            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            this.dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView.ColumnHeadersHeight = 30;
-            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView.EnableHeadersVisualStyles = false;
-            this.dataGridView.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView.Location = new System.Drawing.Point(512, 0);
-            this.dataGridView.Name = "dataGridView";
-            this.dataGridView.ReadOnly = true;
-            this.dataGridView.RowHeadersVisible = false;
-            this.dataGridView.RowHeadersWidth = 51;
-            this.dataGridView.RowTemplate.Height = 50;
-            this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView.Size = new System.Drawing.Size(448, 481);
-            this.dataGridView.TabIndex = 1;
-            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellClick);
-            // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 20F;
-            this.Column1.HeaderText = "";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.FillWeight = 20F;
-            this.Column2.HeaderText = "ID";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column3
-            // 
-            this.Column3.FillWeight = 90F;
-            this.Column3.HeaderText = "Tài khoản";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.FillWeight = 70F;
-            this.Column4.HeaderText = "Máy chủ";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.FillWeight = 35F;
-            this.Column5.HeaderText = "Active";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // imageUsersList
-            // 
-            this.imageUsersList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageUsersList.ImageStream")));
-            this.imageUsersList.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageUsersList.Images.SetKeyName(0, "icons8-user-96.png");
-            // 
-            // imageCheckList
-            // 
-            this.imageCheckList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageCheckList.ImageStream")));
-            this.imageCheckList.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageCheckList.Images.SetKeyName(0, "icons8-cancel-100.png");
-            this.imageCheckList.Images.SetKeyName(1, "icons8-check-100.png");
-            // 
-            // pictureHidenPassword
-            // 
-            this.pictureHidenPassword.Image = global::CustomApp.Properties.Resources._private;
-            this.pictureHidenPassword.Location = new System.Drawing.Point(233, 95);
-            this.pictureHidenPassword.Name = "pictureHidenPassword";
-            this.pictureHidenPassword.Size = new System.Drawing.Size(20, 20);
-            this.pictureHidenPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureHidenPassword.TabIndex = 10;
-            this.pictureHidenPassword.TabStop = false;
-            this.pictureHidenPassword.Click += new System.EventHandler(this.pictureHidenPassword_Click);
             // 
             // customButton30
             // 
@@ -500,7 +377,7 @@
             this.customButton23.Name = "customButton23";
             this.customButton23.Size = new System.Drawing.Size(62, 46);
             this.customButton23.TabIndex = 17;
-            this.customButton23.Text = "Select";
+            this.customButton23.Text = "Ok";
             this.customButton23.TextColor = System.Drawing.Color.White;
             this.customButton23.UseVisualStyleBackColor = false;
             // 
@@ -509,22 +386,30 @@
             this.customTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.customTextBox3.BorderColor = System.Drawing.Color.Cyan;
             this.customTextBox3.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.customTextBox3.BorderRadius = 10;
+            this.customTextBox3.BorderRadius = 15;
             this.customTextBox3.BorderSize = 2;
             this.customTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customTextBox3.ForeColor = System.Drawing.Color.White;
-            this.customTextBox3.Location = new System.Drawing.Point(16, 161);
+            this.customTextBox3.Location = new System.Drawing.Point(16, 154);
             this.customTextBox3.Margin = new System.Windows.Forms.Padding(7);
             this.customTextBox3.Multiline = false;
             this.customTextBox3.Name = "customTextBox3";
-            this.customTextBox3.Padding = new System.Windows.Forms.Padding(10);
+            this.customTextBox3.Padding = new System.Windows.Forms.Padding(12);
             this.customTextBox3.PasswordChar = false;
             this.customTextBox3.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox3.PlaceholderText = "Area";
-            this.customTextBox3.Size = new System.Drawing.Size(130, 39);
-            this.customTextBox3.TabIndex = 16;
+            this.customTextBox3.Size = new System.Drawing.Size(130, 46);
+            this.customTextBox3.TabIndex = 17;
             this.customTextBox3.Texts = "";
             this.customTextBox3.UnderlinedStyle = false;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Location = new System.Drawing.Point(3, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(500, 1);
+            this.panel6.TabIndex = 8;
             // 
             // customButton24
             // 
@@ -790,10 +675,18 @@
             this.customTextBox2.PasswordChar = false;
             this.customTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.customTextBox2.PlaceholderText = "Area";
-            this.customTextBox2.Size = new System.Drawing.Size(130, 39);
+            this.customTextBox2.Size = new System.Drawing.Size(130, 36);
             this.customTextBox2.TabIndex = 16;
             this.customTextBox2.Texts = "";
             this.customTextBox2.UnderlinedStyle = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(500, 1);
+            this.panel3.TabIndex = 8;
             // 
             // customButton8
             // 
@@ -940,7 +833,7 @@
             this.btnModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModify.ForeColor = System.Drawing.Color.White;
-            this.btnModify.Location = new System.Drawing.Point(382, 73);
+            this.btnModify.Location = new System.Drawing.Point(382, 79);
             this.btnModify.Name = "btnModify";
             this.btnModify.Size = new System.Drawing.Size(96, 51);
             this.btnModify.TabIndex = 5;
@@ -995,9 +888,10 @@
             this.comboBoxServer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.comboBoxServer.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.comboBoxServer.BorderSize = 2;
+            this.comboBoxServer.CausesValidation = false;
             this.comboBoxServer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.comboBoxServer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxServer.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBoxServer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxServer.ForeColor = System.Drawing.Color.Transparent;
             this.comboBoxServer.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.comboBoxServer.Items.AddRange(new object[] {
             "Vũ trụ 1 sao",
@@ -1017,14 +911,15 @@
             "Vũ trụ 15 sao",
             "Vũ trụ 16 sao"});
             this.comboBoxServer.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.comboBoxServer.ListTextColor = System.Drawing.Color.White;
-            this.comboBoxServer.Location = new System.Drawing.Point(16, 142);
+            this.comboBoxServer.ListTextColor = System.Drawing.Color.Transparent;
+            this.comboBoxServer.Location = new System.Drawing.Point(16, 146);
             this.comboBoxServer.MinimumSize = new System.Drawing.Size(200, 40);
             this.comboBoxServer.Name = "comboBoxServer";
             this.comboBoxServer.Padding = new System.Windows.Forms.Padding(2);
-            this.comboBoxServer.Size = new System.Drawing.Size(250, 51);
+            this.comboBoxServer.Size = new System.Drawing.Size(250, 47);
             this.comboBoxServer.TabIndex = 2;
             this.comboBoxServer.Texts = "";
+            this.comboBoxServer.OnSelectedIndexChanged += new System.EventHandler(this.comboBoxServer_OnSelectedIndexChanged);
             // 
             // txtPassword
             // 
@@ -1043,7 +938,7 @@
             this.txtPassword.PasswordChar = true;
             this.txtPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtPassword.PlaceholderText = "Password";
-            this.txtPassword.Size = new System.Drawing.Size(250, 51);
+            this.txtPassword.Size = new System.Drawing.Size(250, 47);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.Texts = "";
             this.txtPassword.UnderlinedStyle = false;
@@ -1065,10 +960,117 @@
             this.txUsername.PasswordChar = false;
             this.txUsername.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txUsername.PlaceholderText = "Username";
-            this.txUsername.Size = new System.Drawing.Size(250, 51);
+            this.txUsername.Size = new System.Drawing.Size(250, 47);
             this.txUsername.TabIndex = 0;
             this.txUsername.Texts = "";
             this.txUsername.UnderlinedStyle = false;
+            // 
+            // dataGridView
+            // 
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.AllowUserToDeleteRows = false;
+            this.dataGridView.AllowUserToResizeRows = false;
+            dataGridViewCellStyle37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
+            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
+            this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(16)))), ((int)(((byte)(221)))));
+            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
+            this.dataGridView.ColumnHeadersHeight = 30;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(31)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle39;
+            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView.EnableHeadersVisualStyles = false;
+            this.dataGridView.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dataGridView.Location = new System.Drawing.Point(512, 0);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.ReadOnly = true;
+            this.dataGridView.RowHeadersVisible = false;
+            this.dataGridView.RowHeadersWidth = 51;
+            this.dataGridView.RowTemplate.Height = 50;
+            this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView.Size = new System.Drawing.Size(448, 481);
+            this.dataGridView.TabIndex = 1;
+            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellClick);
+            // 
+            // Column1
+            // 
+            this.Column1.FillWeight = 20F;
+            this.Column1.HeaderText = "";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.FillWeight = 20F;
+            this.Column2.HeaderText = "ID";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column3
+            // 
+            this.Column3.FillWeight = 90F;
+            this.Column3.HeaderText = "Tài khoản";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.FillWeight = 70F;
+            this.Column4.HeaderText = "Máy chủ";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.FillWeight = 35F;
+            this.Column5.HeaderText = "Active";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // imageUsersList
+            // 
+            this.imageUsersList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageUsersList.ImageStream")));
+            this.imageUsersList.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageUsersList.Images.SetKeyName(0, "icons8-user-96.png");
+            // 
+            // imageCheckList
+            // 
+            this.imageCheckList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageCheckList.ImageStream")));
+            this.imageCheckList.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageCheckList.Images.SetKeyName(0, "icons8-cancel-100.png");
+            this.imageCheckList.Images.SetKeyName(1, "icons8-check-100.png");
             // 
             // FormTool
             // 
@@ -1081,10 +1083,10 @@
             this.Name = "FormTool";
             this.Text = "FormTool";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureHidenPassword)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureHidenPassword)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -39,7 +39,7 @@ namespace CustomApp.Controls
             
             //ComboBox: Dropdown list
             cmbList.BackColor = listBackColor;
-            cmbList.Font = new Font(this.Font.Name, 14F);
+            cmbList.Font = new Font(this.Font.Name, 12F);
             cmbList.ForeColor = listTextColor;
             cmbList.SelectedIndexChanged += new EventHandler(ComboBox_SelectedIndexChanged);//Default event
             cmbList.TextChanged += new EventHandler(ComboBox_TextChanged);//Refresh text
@@ -74,7 +74,7 @@ namespace CustomApp.Controls
             this.Size = new Size(200, 40);
             this.ForeColor = Color.DimGray;
             this.Padding = new Padding(borderSize);//Border Size
-            this.Font = new Font(this.Font.Name, 14F);
+            this.Font = new Font(this.Font.Name, 12F);
             base.BackColor = borderColor; //Border Color
             this.ResumeLayout();
             AdjustComboBoxDimensions();
@@ -85,8 +85,8 @@ namespace CustomApp.Controls
             cmbList.Width = lblText.Width;
             cmbList.Location = new Point()
             {
-                X = this.Width - this.Padding.Right - cmbList.Width,
-                Y = lblText.Bottom - cmbList.Height
+                X = this.Width + 30 - cmbList.Width,
+                Y = lblText.Bottom - cmbList.Height+30
             };
         }
         //Event methods
@@ -104,6 +104,11 @@ namespace CustomApp.Controls
         private void Icon_Click(object sender, EventArgs e)
         {
             //Open dropdown list
+            cmbList.Location = new Point()
+            {
+                X = this.Width - cmbList.Width,
+                Y = lblText.Bottom - cmbList.Height 
+            };
             cmbList.Select();
             cmbList.DroppedDown = true;
         }
