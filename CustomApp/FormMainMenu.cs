@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using Bunifu.UI.WinForms;
 using FontAwesome.Sharp;
 using Color = System.Drawing.Color;
 
@@ -11,7 +12,10 @@ namespace CustomApp
     {
         private IconButton currentBtn;
         private Panel leftBorderBtn;
-
+        private const int WM_NCLBUTTONDOWN = 0xA1;
+        private const int HT_CAPTION = 0x2;
+        private bool isDragging = false;
+        private int xOffset, yOffset;
         private Form currentChildForm;
         public FormMainMenu()
         {
@@ -92,12 +96,14 @@ namespace CustomApp
         private void btnSettings_Click(object sender, EventArgs e)
         {
             Reset();
-            OpenChildForm(new Forms.FormTool());
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new Forms.Setting());
         }
 
         private void BtnInfo_Click(object sender, EventArgs e)
         {
             Reset();
+            ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new Forms.Information());
         }
 
@@ -125,5 +131,40 @@ namespace CustomApp
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+   
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+        private void minimizeButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                bunifuPanel1.Dock = DockStyle.None; // Un-dock
+                bunifuPanel2.Dock = DockStyle.None; // Un-dock
+                this.WindowState = FormWindowState.Minimized;
+                
+            }
+            catch (Exception)
+            {
+                //...
+            }
+
+        }
+        private void TitleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+
+
     }
 }

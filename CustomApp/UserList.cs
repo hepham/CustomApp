@@ -33,7 +33,7 @@ namespace CustomApp
         private UserList()
         {
             users = new List<User>();
-            string filePath = "../../data/data.txt";
+            string filePath = "data.txt";
 
             if (File.Exists(filePath))
             {
@@ -43,7 +43,7 @@ namespace CustomApp
                     while ((line = reader.ReadLine()) != null)
                     {
                         string[] parts = line.Split('|');
-                        User newUser=new User(parts[0], parts[1], parts[2],false);
+                        User newUser=new User(parts[0], parts[1], parts[2], parts[3]);
                        users.Add(newUser);
                         
                     }
